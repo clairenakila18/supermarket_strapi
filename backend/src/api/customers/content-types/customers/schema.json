@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "singularName": "customer",
+    "pluralName": "customers",
+    "displayName": "Customers"
+  },
+  "attributes": {
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "contact_no": {
+      "type": "string",
+      "required": true
+    },
+    "frequent_shopper": {
+      "type": "boolean",
+      "default": false
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "password": {
+      "type": "password",
+      "required": true
+    }
+  }
+}

@@ -1,16 +1,16 @@
-const path = require('path');
+import path from 'path';
 
-module.exports = ({ env }) => {
-  const client = env('DATABASE_CLIENT', 'mysql');
+export default ({ env }) => {
+  const client = env('DATABASE_CLIENT', 'sqlite');
 
   const connections = {
     mysql: {
       connection: {
         host: env('DATABASE_HOST', 'localhost'),
         port: env.int('DATABASE_PORT', 3306),
-        database: env('DATABASE_NAME', 'backend'),
-        user: env('DATABASE_USERNAME', 'root'),
-        password: env('DATABASE_PASSWORD', ''),
+        database: env('DATABASE_NAME', 'strapi'),
+        user: env('DATABASE_USERNAME', 'strapi'),
+        password: env('DATABASE_PASSWORD', 'strapi'),
         ssl: env.bool('DATABASE_SSL', false) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),
@@ -44,7 +44,7 @@ module.exports = ({ env }) => {
     },
     sqlite: {
       connection: {
-        filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+        filename: path.join(__dirname, '..', '..', env('DATABASE_FILENAME', '.tmp/data.db')),
       },
       useNullAsDefault: true,
     },

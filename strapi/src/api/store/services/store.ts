@@ -1,0 +1,5 @@
+/**
+ * store service
+ */
+
+export default () => ({});

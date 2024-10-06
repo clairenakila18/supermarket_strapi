@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "strapi",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -21,14 +21,16 @@
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.7.4",
-    "typescript": "^5.2.2"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "88798899-7b28-495d-9f98-3ada299b7c0f"
+    "uuid": "0a3c88e3-6858-4714-b1cd-53aba7fae7aa"
   }
 }

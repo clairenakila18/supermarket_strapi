@@ -1,0 +1,24 @@
+{
+    "kind": "collectionType",
+    "collectionName": "stores",
+    "info": {
+      "singularName": "store",
+      "pluralName": "stores",
+      "displayName": "Stores"
+    },
+    
+    "pluginOptions": {},
+    "attributes": {
+      "name": {
+        "type": "string"
+      },
+      "address": {
+        "type": "string"
+      },
+      "state": {
+        "type": "string"
+      
+      }
+    }
+  }
+  
